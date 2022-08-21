@@ -1,0 +1,94 @@
+:root {
+    --primary-text-color:#757575 ;
+    --title-text-color:#212121;
+    --secondary-text-color:#FFFFFF;
+    --accent-color: #2196F3;
+    
+}
+.body {
+    
+    font-family: "Roboto";
+background-color: #E5E5E5;
+}
+.link {
+    text-decoration: none;
+}
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Raleway";
+    
+}
+.header-logo {
+    color: #000000;}
+.primary-logo {
+    color: var(--accent-color);
+}
+
+    
+
+.nav-link {
+    color: #212121;
+}
+
+.header-address {
+    color: var(--primary-text-color);
+}
+
+.link:hover {
+    color:var(--accent-color);
+}
+.hero-title {
+    color: hide var(--secondary-text-color);
+    font-weight: 900;
+font-size: 44px;
+}
+.btn {
+color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+font-size: 16px;
+border: none;
+border-radius: 4px;
+}
+.title {
+    color: var(--title-text-color);
+    font-weight: 700;
+}
+.primary-title {
+    font-size: 36px;
+}
+.secondary-title {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.employee-name {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.primary-text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+.about-section {
+    font-size: 14px;
+
+}
+.employee-description {
+    font-size: 16px;
+}
+.footer-logo {
+    color: var(--secondary-text-color);
+}
+.footer-background {
+    background-color: #2F303A;
+}
+.footer-address {
+    font-weight: 400;
+font-size: 14px;
+color: rgba(255, 255, 255, 0.6);
+}
+.phys-address {
+    color:var(--secondary-text-color);
+}
