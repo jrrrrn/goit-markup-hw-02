@@ -1,9 +1,12 @@
 :root {
+    --main-text-font: "Roboto";
+    --logo-font: "Raleway";
     --primary-text-color:#757575 ;
     --title-text-color:#212121;
     --secondary-text-color:#FFFFFF;
     --accent-color: #2196F3;
-    --main-logo-color:#000000;
+    --light-theme-logo-color:#000000;
+    --dark-theme-logo-color: #FFF;
     
 }
 
@@ -12,72 +15,74 @@ body {
 font-family: "Roboto",sans-serif;
 background-color: #FFF;
 color: var(--primary-text-color);
-font-weight: 400;
 font-size: 14px;
 line-height: 1.17;
+letter-spacing: 0.03em;
 }
+
 .list {
     list-style-type: none;}
 .link {
     text-decoration: none;
+    font-style: normal;
     
 }
-.btn {
-    font-family: inherit;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: var(--title-text-color);
-    background-color:#F5F4FA ;
-}
+
 
 /* Хедер */
 .logo {
     text-decoration: none;
     font-size: 26px;
     font-weight: 700;
-    font-family: "Raleway";
+    font-family: var(--logo-font);
+    line-height: 1.19;
+    color: var(--light-theme-logo-color);
     
 }
-.header-logo {
-    color: var(--main-logo-color);
-line-height: 1.38;}
-.primary-logo {
+
+.web-logo {
     color: var(--accent-color);
 }
  
 
 .nav-link {
     color: var(--title-text-color);
+    letter-spacing: 0.02em;
+    font-weight: 500;
     
 }
 
-.header-address {
+.header .address-link {
     color: inherit;
+    letter-spacing: 0.02em;
+    font-weight: 500;
     
 }
 
-.link:hover {
+.nav-link:hover,
+.address-link:hover {
     color:var(--accent-color);
 }
-.link:focus {
+.nav-link:focus,
+.address-link:focus {
     color:var(--accent-color);}
+
     /* Футер */
-    .footer-logo {
-        color: var(--secondary-text-color);
+    .footer .logo {
+        color: var(--dark-theme-logo-color);  
+          
     }
-    .footer-background {
+    .footer {
         background-color:  #2F303A;
     }
-    .footer-address {
-    color: rgba(255, 255, 255, 0.6);
-    }
-   
-    
+    .footer-address  {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.71;
+        }
     .phys-address {
-        color:var(--secondary-text-color);}
-  
+            color: var(--secondary-text-color);
+        }
+
     /* Герой */
 .hero-title {
     
@@ -87,38 +92,58 @@ line-height: 1.38;}
     line-height: 1.4;
     /* бг для видимості */
     background-color: #2F303A;
+    letter-spacing: 0.06em;
     
    
 }
-.hero-btn {
+.modal-button {
 color: var(--secondary-text-color);
-    background-color: var(--accent-color);
-    font-weight: 700;
-    line-height: 1.9;
+background-color: var(--accent-color);
+
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+
+line-height: 1.9;
+letter-spacing: 0.06em;
 }
+
+
 /* Про нас */
 .title {
     color: var(--title-text-color);
+    
     font-weight: 700;
    
 }
-.primary-title {
+
+
+.about-us-list-item .title {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.about-us-description {
+    line-height: 1.74;
+  
+}
+.what-we-do .title {
+    font-size: 36px;}
+
+/* Наша команда */
+
+.our-team .title {
     font-size: 36px;
 }
-.secondary-title {
-    text-transform: uppercase;
-}
-.about-section {
-    line-height: 1.74;
-}
-/* Наша команда */
-.employee-name {
+.our-team-employee-name {
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.18;
+    color: var(--title-text-color);
 
 }
-.employee-description {
+.our-team-employee-position {
     font-size: 16px;
+    line-height: 1.18;
     
 }
 /* Наші проекти */
@@ -126,8 +151,9 @@ color: var(--secondary-text-color);
     
     font-weight: 700;
     font-size: 18px;
-    list-style: 2;
+    line-height: 2;
     color: var(--title-text-color);
+    letter-spacing: 00.06em;
 }
 .project-type {
     
@@ -137,21 +163,18 @@ color: inherit;
 
 }
 .filter-btn {
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
 
 }
+/* тимчасово */
 .everything-btn {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
 
-.project-card {
-    border: hide 1px #EEE solid;
-}
-
 .project-card-link {
-    color: var(--primary-text-color);
-    text-decoration: none;
+    color: inherit;
     
 }
